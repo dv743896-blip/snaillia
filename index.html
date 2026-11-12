@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snaillia.dev</title>
+    <title>Snaillia | Natural Inner Beauty</title>
+    <meta name="description" content="Discover Snaillia skincare: thoughtful everyday essentials for your personal care ritual.">
+    <meta name="theme-color" content="#e4f1e8">
     <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,44 +14,20 @@
 </head>
 <body>
 
-<!-- <div class="head">
-<h1>snaillia</h1>
-        <nav class="hea">
-            <a href="products">products</a>
-            <a href="story">story</a>
-            <a href="manufacturing">manufacturing</a>
-            <a href="packaging">packaging</a>
-            <a href="team">team</a>
-        </nav>
-</div> -->
-
- <!-- <section class="sn">
-<h2>snaillia</h2>
-<h3>Natural Inner Beauty</h3>
-<p>provide deluxe hydration for those with dry or age-related skin <br>
- concern. They add intense moisture to dehydrated or mature skin, <br>
- alleviated uneven ,sun-damaged textures to promote natural <br>
- radiance</p>
-<button class="btn" >add to your cart</button>
-<img src="prod-removebg-preview.png" alt="">
-</section> -->
-
-<section class="startmain">
+<section class="startmain" id="home">
 <header>
-        <div class="logo">
-            snaillia<sup>™</sup>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Best Seller</a></li>
-            <li><a href="#">Skin Products</a></li>
-            <li><a href="#">Beauty Products</a></li>
-            <li><a href="#">Track your order</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
+        <a class="logo" href="#home" aria-label="Snaillia home">snaillia<sup>™</sup></a>
+        <nav aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="#products">Best Seller</a></li>
+                <li><a href="#products">Skin Products</a></li>
+                <li><a href="#benefits">Our Approach</a></li>
+                <li><a href="#partners">Our Partners</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
         <div class="nav-icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
-            <i class="fa-regular fa-user"></i>
+            <a href="#products" aria-label="Explore Snaillia products"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i></a>
         </div>
     </header>
 
@@ -60,7 +38,7 @@
             <h2 class="subtitle">Natural Inner Beauty</h2>
             
             <p class="description">
-                Provide deluxe hydration for those with dry or age-related skin concerns. They add intense moisture to dehydrated or mature skin, alleviating uneven, sun-damaged textures to promote natural radiance.
+                Thoughtful skincare for a simple daily ritual. Explore the Snaillia collection of oils and essentials, made to bring a little more care to your routine.
             </p>
 
             <div class="size-selector">
@@ -75,12 +53,12 @@
                 </div>
             </div>
 
-            <button class="add-to-cart">Add to your cart</button>
+            <a class="add-to-cart" href="#products">Explore the collection</a>
         </div>
 
         <div class="product-display">
-            <img class="text" src="img/faceeoil.svg" alt="">
-            <img src="img/startmain.png" alt="Snaillia Face Oil Product" class="product-img">
+            <img class="text" src="img/faceeoil.svg" alt="" aria-hidden="true">
+            <img src="img/startmain.png" alt="Snaillia face oil bottle and packaging" class="product-img" fetchpriority="high" decoding="async">
            
         </div>
     </main>
@@ -98,33 +76,6 @@
 
 
 
-
-<!-- <section class="sn">
- <div class="left">
-<h2>snaillia</h2>
-<h3>Natural Inner Beauty</h3>
-<p>provide deluxe hydration for those with dry or age-related skin <br>
- concern. They add intense moisture to dehydrated or mature skin, <br>
- alleviated uneven ,sun-damaged textures to promote natural <br>
- radiance</p>
-<button class="btn" >add to your cart</button>
-</div>
-
-<div class="right">
-<img src="prod-removebg-preview.png" alt="">
-</div>
-</section> -->
-
-<!-- <section class="follow">
-<h4>25,356 <br>
- happy customers</h4>
-<h4>6,050 <br>
- followers</h4>
-<h4>851 <br>
- shops</h4>
-<h4>95% <br>
- happy customers</h4>
-</section> -->
 
 <section class="stats-section">
     <div class="stat-item">
@@ -148,55 +99,49 @@
     </div>
 </section>
 
-<div class="foll">
-<h4>WHY SNAILLIA?</h4>
-<P>yourself required no at thoughts delicate landlord it be. Branched <br> do 
-is whatever it. Further be chapter at visit married in it pressed</P>
-</div>
+<section class="foll" id="benefits" aria-labelledby="benefits-title">
+<h2 id="benefits-title">Why Snaillia?</h2>
+<p>Simple essentials and thoughtful details make it easier to create a skincare ritual that feels like your own.</p>
+</section>
 
-<section class="cardo">
-<div class="card1" style="width: 18rem;">
-  <img src="img/natural.svg" class="card-img-top" alt="...">
+<section class="cardo" aria-label="The Snaillia approach">
+<article class="card1">
+  <img src="img/natural.svg" class="card-img-top" alt="" aria-hidden="true">
   <div class="card-body">
-    <h5 class="card-title">Natural</h5>
-    <p class="card-text">Yourself required no at thoughts.delicate landlord it to be</p>
+    <h3 class="card-title">Natural</h3>
+    <p class="card-text">A considered collection for the everyday moments in your routine.</p>
   </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="img/in.svg" class="card-img-top" alt="...">
+ </article>
+<article class="card">
+  <img src="img/in.svg" class="card-img-top" alt="" aria-hidden="true">
   <div class="card-body">
-    <h5 class="card-title">No side effects</h5>
-    <p class="card-text">Yourself required no at thoughts.delicate landlord it to be</p>
+    <h3 class="card-title">Everyday care</h3>
+    <p class="card-text">Simple products designed to fit naturally into your personal care ritual.</p>
   </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="img/mop.svg" class="card-img-top" alt="...">
+ </article>
+<article class="card">
+  <img src="img/mop.svg" class="card-img-top" alt="" aria-hidden="true">
   <div class="card-body">
-    <h5 class="card-title">100% organic</h5>
-    <p class="card-text">Yourself required no at thoughts.delicate landlord it to be</p>
+    <h3 class="card-title">Thoughtful details</h3>
+    <p class="card-text">Explore each product to learn more about its ingredients and how to use it.</p>
   </div>
-</div>
+</article>
 </section>
 
 <!-- this is a about section started -->
 
-<section class="sn1">
+<section class="sn1" id="about">
  <div class="left1">
 <h2>About Us</h2>
-<p>And produce say the ten moments parties. Simple innate <br>
- summer fat appear basket his desire joy. Outward clothes <br>
- promise at gravity do excited. Sufficient particular impossible <br>
- by reasonable oh expression is. Yet preference connection <br>
- unpleasant yet melancholy but end appearance. And <br>
- excellence partiality estimating terminated day everything.</p>
+<p>Snaillia is about making everyday skincare feel a little more considered. Discover a collection of oils and essentials, and find the routine that feels right for you.</p>
 <div class="bbtn">
-<button class="bb1">Buy Now</button>
-<button class="bb">View Details</button>
+<a class="bb1" href="#products">Explore products</a>
+<a class="bb" href="#benefits">Our approach</a>
 </div>
 </div>
 
 <div class="right">
-<img src="img/image-removebg-preview (3).png" alt="">
+<img src="img/image-removebg-preview (3).png" alt="Snaillia skincare bottle and packaging">
 </div>
 </section>
 
@@ -206,9 +151,9 @@ is whatever it. Further be chapter at visit married in it pressed</P>
 
 <!-- this is a products section started -->
 
-<section class="pro">
+<div class="pro">
 
-<section class="products-section">
+<section class="products-section" id="products">
   <h2 class="section-title">OUR PRODUCTS</h2>
   
   <div class="products-grid">
@@ -282,38 +227,35 @@ is whatever it. Further be chapter at visit married in it pressed</P>
 </section>
 
 
-</section>
-
-
+</div>
 
 <!-- this is a products section end  -->
 
-<section class="to">
-<div class="too"><h1>OUR PARTNERS</h1>
+<section class="to" id="partners">
+<div class="too"><h2>OUR PARTNERS</h2>
 </div>
         <div class="town">
-           <img src="img/well.svg" width="190px" height="150px">
-           <img src="img/kee.svg" width="190px" height="150px">
-           <img src="img/nevel.svg" width="190px" height="150px">
-           <img src="img/ulta.svg" width="190px" height="150px">
+           <img src="img/well.svg" alt="" aria-hidden="true">
+           <img src="img/kee.svg" alt="" aria-hidden="true">
+           <img src="img/nevel.svg" alt="" aria-hidden="true">
+           <img src="img/ulta.svg" alt="" aria-hidden="true">
         </div>
 <div class="town">
-<img src="img/bio.svg" width="190px" height="150px">
-<img src="img/psy.svg" width="190px" height="150px">
-<img src="img/abb.svg" width="190px" height="150px">
+<img src="img/bio.svg" alt="" aria-hidden="true">
+<img src="img/psy.svg" alt="" aria-hidden="true">
+<img src="img/abb.svg" alt="" aria-hidden="true">
 </div>
 </section>
 
-<section class="sol">
+<section class="sol" id="newsletter">
 <div class="rig">
-<img src="img/WhatsApp_Image_2026-07-26_at_8.30.59_PM-removebg-preview.png" alt="">
+<img src="img/WhatsApp_Image_2026-07-26_at_8.30.59_PM-removebg-preview.png" alt="Snaillia skincare products">
 </div>
 
 <div class="lef">
-<h5>Subscribe Newsletter</h5>
-<h6>Enter your email below for daily updates</h6>
-<input class="text-input" type="email" name="email" id="email" placeholder="Enter your email">
-<button class="btnn1" >Get Start</button>
+<h2>Stay in touch</h2>
+<p>For product questions and Snaillia updates, send us a note.</p>
+<a class="subscribe-link" href="mailto:hello@snaillia.co?subject=Snaillia%20updates">Email Snaillia</a>
 </div>
 </section>
 
@@ -323,22 +265,16 @@ is whatever it. Further be chapter at visit married in it pressed</P>
 <footer class="site-footer">
         
         <div class="footer-col footer-brand">
-            <p>Learn To Love Growth And Change And You Will Be A Success.</p>
-            <div class="social-icons">
-                <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#" aria-label="Medium"><i class="fa-brands fa-medium-m"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            </div>
+            <p>Thoughtful skincare for simple daily rituals.</p>
         </div>
 
         <div class="footer-col footer-links">
             <ul>
-                <li><a href="#">Best Seller</a></li>
-                <li><a href="#">Skin Products</a></li>
-                <li><a href="#">beauty products</a></li>
-                <li><a href="#">Track your order</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#products">Best Seller</a></li>
+                <li><a href="#products">Skin Products</a></li>
+                <li><a href="#benefits">Our Approach</a></li>
+                <li><a href="#partners">Our Partners</a></li>
+                <li><a href="#about">About Us</a></li>
             </ul>
         </div>
 
@@ -349,20 +285,17 @@ is whatever it. Further be chapter at visit married in it pressed</P>
             </div>
             <div class="contact-item">
                 <i class="fa-solid fa-phone"></i>
-                <span>+1 789 123456</span>
+                <a href="tel:+1789123456">+1 789 123456</a>
             </div>
             <div class="contact-item">
                 <i class="fa-solid fa-envelope"></i>
-                <span>hello@snaillia.co</span>
+                <a href="mailto:hello@snaillia.co">hello@snaillia.co</a>
             </div>
         </div>
 
         <div class="footer-col footer-newsletter">
-            <p>Receive special offers and get our latest updates.</p>
-            <form class="newsletter-form" action="#" method="POST">
-                <input type="email" placeholder="Enter e-mail" required>
-                <button type="submit">JOIN</button>
-            </form>
+            <p>Questions or interested in updates? We would love to hear from you.</p>
+            <a class="footer-mail-link" href="mailto:hello@snaillia.co?subject=Snaillia%20updates">Contact Snaillia</a>
         </div>
 
     </footer>
@@ -376,6 +309,5 @@ is whatever it. Further be chapter at visit married in it pressed</P>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
