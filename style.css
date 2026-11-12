@@ -690,3 +690,483 @@ margin-left: 80px;
 }
 .card1 img{
 margin-left: 70px;}
+
+/* Responsive layout for tablets and phones. */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.startmain {
+    min-height: 100vh;
+    overflow: hidden;
+    background: var(--bg-color);
+    color: var(--text-dark);
+}
+
+@media (max-width: 1024px) {
+    header {
+        gap: 1rem;
+        padding: 1.5rem 4%;
+    }
+
+    .nav-links {
+        gap: clamp(0.75rem, 2vw, 1.5rem);
+    }
+
+    .nav-links a {
+        font-size: 0.82rem;
+    }
+
+    main {
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.5rem 4%;
+    }
+
+    h1.main-title {
+        font-size: clamp(4.5rem, 10vw, 7rem);
+    }
+
+    .product-img {
+        height: min(58vw, 620px);
+        margin-right: 0;
+    }
+
+    .text {
+        height: min(58vw, 620px);
+        margin-right: 0;
+    }
+
+    .sn1 {
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .left1,
+    .right {
+        height: auto;
+    }
+
+    .left1 p br {
+        display: none;
+    }
+
+    .town {
+        flex-wrap: wrap;
+        gap: 1rem 3%;
+        padding: 0 4%;
+    }
+
+    .town img {
+        width: min(22%, 190px);
+        height: auto;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        gap: 0.8rem 1rem;
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 1.7rem;
+    }
+
+    .nav-icons {
+        gap: 0.9rem;
+        font-size: 1.05rem;
+    }
+
+    .nav-links {
+        order: 3;
+        flex: 0 0 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.5rem 1rem;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        padding: 0.35rem 0;
+        font-size: 0.82rem;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 2rem 5% 1rem;
+    }
+
+    .content {
+        max-width: none;
+    }
+
+    h1.main-title {
+        margin-bottom: 1rem;
+        font-size: clamp(4.2rem, 17vw, 6.5rem);
+    }
+
+    h2.subtitle {
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+    }
+
+    p.description {
+        max-width: 42rem;
+        margin-bottom: 1.4rem;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .size-selector {
+        margin-bottom: 1.4rem;
+    }
+
+    .add-to-cart {
+        min-height: 48px;
+        padding: 0.8rem 1.25rem;
+    }
+
+    .product-display {
+        --mobile-product-height: clamp(290px, 72vw, 460px);
+        display: grid;
+        width: 100%;
+        min-height: var(--mobile-product-height);
+        grid-template-columns: clamp(78px, 23vw, 132px) minmax(0, 1fr);
+        grid-template-rows: var(--mobile-product-height);
+        gap: clamp(12px, 2.5vw, 20px);
+        align-items: center;
+        justify-content: initial;
+        margin: 0;
+    }
+
+    .text {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        max-width: 100%;
+        height: var(--mobile-product-height);
+        margin: 0;
+        object-fit: contain;
+        transform: none;
+    }
+
+    .product-img {
+        position: relative;
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        height: var(--mobile-product-height);
+        margin: 0;
+        object-fit: contain;
+    }
+
+    .stats-section {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.8rem 0.75rem;
+        padding: 3rem 5%;
+    }
+
+    .stat-number {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
+
+    .foll {
+        padding: 3rem 6% 1rem;
+        text-align: center;
+    }
+
+    .foll h4 {
+        padding: 0;
+        font-size: clamp(1.8rem, 7vw, 2.6rem);
+        letter-spacing: 1.5px;
+    }
+
+    .foll p {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 0.75rem 0 0;
+        font-size: 1rem;
+    }
+
+    .foll p br {
+        display: none;
+    }
+
+    .cardo {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+        gap: 1.5rem;
+        padding: 1.5rem 5% 3rem;
+    }
+
+    .card,
+    .card1 {
+        width: 100% !important;
+        min-width: 0;
+    }
+
+    .card img,
+    .card1 img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto 1rem !important;
+    }
+
+    .card-body h5 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .sn1 {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        margin-top: 2.5rem;
+        padding: 0 6%;
+    }
+
+    .left1,
+    .right {
+        width: 100%;
+        height: auto;
+    }
+
+    .left1 h2 {
+        padding: 0;
+        font-size: clamp(2.2rem, 8vw, 3.2rem);
+    }
+
+    .left1 p {
+        padding: 0.75rem 0 0;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .left1 p br {
+        display: none;
+    }
+
+    .bbtn {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin: 1.25rem 0 0;
+    }
+
+    .bb1,
+    .bb {
+        width: auto;
+        min-height: 46px;
+        margin: 0;
+        padding: 0.65rem 1rem;
+    }
+
+    .right img {
+        display: block;
+        width: 100%;
+        height: clamp(250px, 62vw, 420px);
+        padding: 0;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+    .pro {
+        height: auto;
+        margin-top: 3rem;
+        padding: 2rem 0;
+    }
+
+    .products-section {
+        padding: 2rem 6%;
+    }
+
+    .section-title {
+        padding-bottom: 3rem;
+        font-size: clamp(1.7rem, 6vw, 2.2rem);
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem 1rem;
+    }
+
+    .icon-circle {
+        width: clamp(72px, 16vw, 100px);
+        height: clamp(72px, 16vw, 100px);
+    }
+
+    .product-label {
+        font-size: 0.92rem;
+        text-align: center;
+    }
+
+    .to {
+        margin-top: 2rem;
+    }
+
+    .too h1 {
+        padding-bottom: 1.25rem;
+        font-size: 1.8rem;
+    }
+
+    .town {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0 6%;
+        margin-bottom: 1rem;
+    }
+
+    .town img {
+        width: min(28%, 160px) !important;
+        height: auto;
+        max-height: 90px;
+        object-fit: contain;
+    }
+
+    .sol {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+        padding: 2rem 6%;
+    }
+
+    .rig,
+    .lef {
+        width: 100%;
+    }
+
+    .rig img {
+        display: block;
+        width: min(100%, 480px);
+        height: auto;
+        max-height: 320px;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+    .lef {
+        height: auto;
+        margin: 0;
+        padding: 1rem 0 0;
+    }
+
+    .lef h5 {
+        font-size: clamp(1.65rem, 6vw, 2.2rem);
+    }
+
+    .lef h6 {
+        padding-top: 0.6rem;
+        font-size: 1rem;
+    }
+
+    .lef input {
+        width: 68%;
+        height: 48px;
+        margin-top: 1.25rem;
+    }
+
+    .btnn1 {
+        width: 28%;
+        min-height: 48px;
+    }
+
+    .site-footer {
+        gap: 2rem;
+        margin-top: 2rem;
+        padding: 2.5rem 6%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .nav-links {
+        column-gap: 0.5rem;
+    }
+
+    .nav-links a {
+        font-size: 0.76rem;
+    }
+
+    main {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .product-display {
+        --mobile-product-height: clamp(280px, 76vw, 390px);
+        grid-template-columns: clamp(78px, 23vw, 112px) minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .stats-section {
+        gap: 1.6rem 0.5rem;
+        padding: 2.5rem 4%;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.78rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .town img {
+        width: min(42%, 150px) !important;
+        max-height: 75px;
+    }
+
+    .lef input {
+        width: 64%;
+        padding-left: 0.75rem;
+    }
+
+    .btnn1 {
+        width: 32%;
+    }
+
+    .site-footer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
